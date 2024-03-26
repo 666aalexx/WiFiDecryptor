@@ -1,2 +1,18 @@
-# WiFiDecryptor
-Automatic and fast tool to obtain the password of a Wi-Fi network.
+## Execution
+
+```
+  git clone https://github.com/666aalexx/WiFiDecryptor.git
+  
+  cd WiFiDecryptor/
+  
+  chmod +x wifi-decryptor.sh
+  
+  ./wifi-decryptor.sh
+```
+
+### Installation
+```
+  chmod +x install.sh
+
+  ./install.sh
+```
