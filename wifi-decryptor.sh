@@ -32,10 +32,10 @@ function dependencies(){
 	for program in "${dependencies[@]}"; do
 	test -f /usr/bin/$program > /dev/null 2>&1
 	if [ $? == "0" ]; then
-	echo -e "${greenColour}[V] $program${endColour}"
+	echo -e "${greenColour}[✓] $program${endColour}"
 	sleep 0.5
 	else
-	echo -e "${redColour}[X] $program${endColour}"
+	echo -e "${redColour}[!] $program${endColour}"
 	echo -e "${grayColour}Installing $program...${endColour}"
 	apt install $program -y > /dev/null 2>&1
 	sleep 0.5
